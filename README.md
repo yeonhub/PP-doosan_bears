@@ -7,11 +7,9 @@
 
 ## 프로젝트 기술 스택
 
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <br/>
-<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <br/>
-<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+`<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">`
+`<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">`
+`<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">`
 
 ## 컴포넌트 구조
 
@@ -29,6 +27,7 @@ src	┌	assets	-	api	┌	DoosanData.js
 ```
 
 ## 프로젝트 캡쳐
+
 <img src="mdimg/main.PNG">
 
 ## 기능 구현
@@ -93,6 +92,7 @@ export const ysh53 = [
 <br>
 
 ### 2) 사진 클릭시 해당 선수 데이터 출력
+
 <img src="mdimg/select.gif">
 
 ```javascript
@@ -138,8 +138,8 @@ const DoosanItem = ({ item, onSelect }) => {
 <br>
 
 ### 3) 썸네일 사진 클릭 시 큰 사진 변경
-<img src="mdimg/thumb.gif">
 
+<img src="mdimg/thumb.gif">
 
 ```javascript
 const DoosanImg = ({ data }) => {
@@ -185,6 +185,7 @@ const DoosanImg = ({ data }) => {
 <br>
 
 ### 4) 메뉴 클릭 시 해당 정보 출력
+
 <img src="mdimg/menu.gif">
 
 ```javascript
