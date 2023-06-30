@@ -1,0 +1,452 @@
+#wrap {
+    #content {
+        .inner {
+            width: 1200px;
+            margin: auto;
+
+            .img {
+                height: 180px;
+                width: 1200px;
+                display: flex;
+                margin: 20px 0;
+
+                .logo {
+                    height: 120px;
+                    margin: auto;
+                }
+            }
+
+            .list {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    width: 150px;
+                    height: 230px;
+                    border: 3px solid lightgray;
+
+                    margin: 10px;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    position: relative;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        box-sizing: border-box;
+
+                    }
+
+                    p {
+                        display: flex;
+                        justify-content: space-between;
+                        background: #131230;
+
+
+                        em {
+                            color: #ED1C24;
+                            font-size: 20px;
+                            font-weight: 700;
+                            margin-left: 10px;
+                        }
+
+                        strong {
+                            line-height: 30px;
+                            text-align: right;
+                            font-size: 14px;
+                            font-weight: 500;
+                            margin-right: 5px;
+                            color: white;
+                        }
+                    }
+
+                    span {
+                        display: block;
+                        color: white;
+                        text-align: right;
+                        font-size: 20px;
+                        padding-right: 5px;
+                        padding-bottom: 4px;
+                        background: #ED1C24;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+
+                    &::after {
+                        content: attr(data-id);
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        top: -10px;
+                        left: -10px;
+                        background: lightslategrey;
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+
+                    &:hover {
+                        img {
+                            border: 3px solid #131230;
+                        }
+
+                        em {
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .info {
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+
+                .gallery {
+                    margin: 30px;
+                    width: 450px;
+                    height: 500px;
+                    box-sizing: border-box;
+                    display: flex;
+
+                    .bigimgbox {
+                        display: block;
+                        width: 300px;
+                        margin: 10px auto;
+
+                        .bigimg {
+                            display: block;
+                            width: 300px;
+                            margin: auto;
+
+                        }
+                    }
+
+                    ul {
+                        margin: 10px;
+
+                        .tn {
+                            width: 100px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .menubox {
+                    display: block;
+
+                    .menu {
+                        display: flex;
+                        justify-content: space-between;
+                        height: 80px;
+                        width: 650px;
+
+
+                        .submenu {
+                            font-size: 20px;
+                            width: 119px;
+                            height: 55px;
+                            box-sizing: border-box;
+                            text-align: center;
+                            line-height: 50px;
+                            ;
+                            font-weight: 700;
+                            margin: 25px 3px;
+                            padding: 5px 15px;
+                            border-top-left-radius: 10%;
+                            border-top-right-radius: 10%;
+                            background: lightslategray;
+                            cursor: pointer;
+
+                            &.on {
+                                color: white;
+                                background: #131230;
+                            }
+
+                            &:first-child {
+                                margin-left: 1px;
+                            }
+
+                            &:last-child {
+                                margin-right: 1px;
+                            }
+
+                        }
+                    }
+
+                    .con {
+
+                        .profile {
+                            width: 650px;
+                            height: 450px;
+
+                            .w1 {
+                                width: 150px;
+                            }
+
+                            .w2 {
+                                width: auto;
+                            }
+
+                            thead {
+                                .noth {
+                                    background: #131230;
+                                    color: white;
+                                    height: 35px;
+                                    font-size: 18px;
+                                    vertical-align: middle;
+                                }
+
+                                .nameth {
+                                    background: #ED1C24;
+                                    color: white;
+                                    height: 45px;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    vertical-align: middle;
+                                }
+                            }
+
+                            tbody {
+                                td {
+
+                                    border: 1px solid lightgray;
+
+                                    &:first-child {
+                                        background: #131230;
+                                        color: white;
+                                        text-align: center;
+                                        vertical-align: middle;
+                                        font-size: 18px;
+                                    }
+
+                                    &:last-child {
+                                        background: white;
+                                        color: #000;
+                                        font-size: 18px;
+                                        padding-left: 20px;
+                                        vertical-align: middle;
+                                        text-align: left;
+
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .club {
+                            width: 650px;
+
+                            .w1 {
+                                width: 150px;
+                            }
+
+                            .w2 {
+                                width: auto;
+                            }
+
+                            thead {
+                                .noth {
+                                    background: #131230;
+                                    color: white;
+                                    height: 35px;
+                                    font-size: 18px;
+                                    vertical-align: middle;
+                                }
+
+                                .nameth {
+                                    background: #ED1C24;
+                                    color: white;
+                                    height: 45px;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    vertical-align: middle;
+                                }
+                            }
+
+                            tbody {
+                                .clubhistory {
+                                    background: #131230;
+                                    color: white;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                    font-size: 18px;
+                                }
+
+                                .clublist {
+                                    background: white;
+                                    color: #000;
+                                    font-size: 18px;
+                                    padding-left: 20px;
+                                    vertical-align: middle;
+                                    text-align: left;
+
+                                }
+
+                                td {
+                                    border: 1px solid lightgray;
+                                    height: 80px;
+                                }
+                            }
+
+                        }
+
+                        .stat {
+                            width: 650px;
+                            margin-bottom: 30px;
+
+                            thead {
+                                th {
+
+                                    border: 1px solid lightgray;
+                                }
+
+                                .noth {
+                                    background: #131230;
+                                    color: white;
+                                    height: 35px;
+                                    font-size: 18px;
+                                    vertical-align: middle;
+                                    border: none;
+                                }
+
+                                .nameth {
+                                    background: #ED1C24;
+                                    color: white;
+                                    height: 45px;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    vertical-align: middle;
+                                    border: none;
+                                }
+                                .kbologo{
+                                    height: 50px;
+                                    border: none;
+                                    text-align: center;
+                                    box-sizing: border-box;
+                                    background: lightgrey;
+                                    img {
+                                        height: 40px;
+                                        margin-top: 5px;
+                                    }
+                                }
+
+                                .stats {
+                                    background: #131230;
+                                    color: white;
+                                    height: 40px;
+                                    vertical-align: middle;
+                                    font-size: 16px;
+                                }
+                            }
+
+                            tbody {
+                                td {
+                                    text-align: center;
+                                    border: 1px solid lightgray;
+                                    height: 35px;
+                                    vertical-align: middle;
+
+                                    &:first-child {
+                                        background: #131230;
+                                        color: white;
+                                        text-align: center;
+                                        vertical-align: middle;
+                                        font-size: 18px;
+                                    }
+
+
+                                }
+                            }
+
+                        }
+
+                        .news {
+                            margin-bottom: 30px;
+                            .noth {
+                                background: #131230;
+                                color: white;
+                                height: 35px;
+                                font-size: 18px;
+                                vertical-align: middle;
+                                border: none;
+                                text-align: center;
+                                line-height: 35px;
+                            }
+
+                            .nameth {
+                                background: #ED1C24;
+                                color: white;
+                                height: 45px;
+                                line-height: 49px;
+                                font-size: 20px;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: none;
+                                text-align: center;
+                            }
+
+                            .naversports {
+                                height: 50px;
+                                border: none;
+                                text-align: center;
+                                background: #1EC800;
+
+                                img {
+                                    height: 40px;
+                                    margin-top: 5px;
+                                }
+                            }
+
+                            .newsUl {
+                                width: 650px;
+
+                                .newsLi {
+                                    border: 1px solid lightgray;
+                                    box-sizing: border-box;
+                                    padding: 10px;
+
+                                    .newsA {
+                                        .title {
+                                            font-size: 18px;
+                                            font-weight: 600;
+                                            margin: 3px 0;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        .youtube {
+                            margin-bottom: 30px;
+                            .noth {
+                                background: #131230;
+                                color: white;
+                                height: 35px;
+                                font-size: 18px;
+                                vertical-align: middle;
+                                border: none;
+                                text-align: center;
+                                line-height: 35px;
+                            }
+
+                            .nameth {
+                                background: #ED1C24;
+                                color: white;
+                                height: 45px;
+                                line-height: 49px;
+                                font-size: 20px;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: none;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
