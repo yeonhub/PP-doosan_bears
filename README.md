@@ -313,6 +313,9 @@ axios의 get 링크에 "https://openapi.naver.com" 를 넣으니 CORS 오류가 
 
 이를 해결하기 위해 찾아보던 중 proxy 설정을 하면 된다기에 proxy middleware 라이브러리를 설치해 앞 주소를 설정했다.
 
+<img src="mdimg/news1.png">
+<img src="mdimg/news2.png">
+
 <br>
 
 #### 5-2) 배포 불가능
