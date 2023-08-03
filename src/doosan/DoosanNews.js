@@ -17,8 +17,8 @@ const DoosanNews = ({ data }) => {
                     title: 'true',
                 },
                 headers: {
-                    'X-Naver-Client-Id': process.env.REACT_APP_NAVER_CLIENT_ID,
-                    'X-Naver-Client-Secret': process.env.REACT_APP_NAVER_CLIENT_SECRET,
+                    'X-Naver-Client-Id': '6gciAqT04Lv_HJHO9k2T',
+                    'X-Naver-Client-Secret': 'IeAvAYZHwk',
                 },
             })
             .then((response) => {
