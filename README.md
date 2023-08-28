@@ -325,5 +325,5 @@ api를 가져오는 node를 공부해서 구현해보려 했으나 잘 되지 �
 
 또한 백엔드를 업로드 할 호스팅 서버를 구축해야 하는데 이후 작업은 node를 배운 뒤 추가해야 할 것 같다.
 
-[@Node.js 추가 버전](https://github.com/yeonhub/PP-doosan_bears_node)
 
+[@Node.js 추가 버전](https://github.com/yeonhub/PP-doosan_bears_node)
