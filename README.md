@@ -325,5 +325,42 @@ api를 가져오는 node를 공부해서 구현해보려 했으나 잘 되지 �
 
 또한 백엔드를 업로드 할 호스팅 서버를 구축해야 하는데 이후 작업은 node를 배운 뒤 추가해야 할 것 같다.
 
-
 [@Node.js 추가 버전](https://github.com/yeonhub/PP-doosan_bears_node)
+
+
+
+## 리펙터링 (23.12.19)
+
+[@리펙터링 후기](https://nonmajor-be-developer.tistory.com/entry/3%EC%B0%A8-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%B1%8C%EB%A6%B0%EC%A7%80FE-%EA%B3%BC%EC%A0%9C-SOLID%ED%95%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8)
+
+작업내용
+
+1) SOLID 원칙 준수
+2) 컴파운드 컴포넌트 패턴(CCP) 적용
+3) 비즈니스 로직 / UI 로직 컴포넌트 분리
+
+결과
+
+1) SRP 원칙 준수 및 필요 없는 prop 정리
+2) 작은 컴포넌트들을 모아 header 컴포넌트 안에서 관리
+3) CCP 적용하며 필요한 부분에서만 Context 사용
+
+```javascript
+const Main = () => {
+    return (
+        <>
+            <Header>
+                <Header.Logo />
+                <DSPlayers />
+                <DSInfo>
+                    <DSImages />
+                    <DSContentContainer>
+                        <DSMenuUI />
+                        <DSContent />
+                    </DSContentContainer>
+                </DSInfo>
+            </Header>
+        </>
+    );
+};
+```
